@@ -1,23 +1,5 @@
 # CAMP US
 
-### 팀명: COMM1T
-
-### 팀원
-
-- 🦊 팀원 : **백동현**
-[<img src="https://img.shields.io/badge/Github-Link-181717?logo=Github">](https://github.com/dongh810)
-
-- 🧸 팀원 : **손세림**
-[<img src="https://img.shields.io/badge/Github-Link-181717?logo=Github">](https://github.com/bucky1005)
-
-- 🎀 팀원 : **박찬호**
-[<img src="https://img.shields.io/badge/Github-Link-181717?logo=Github">](https://github.com/Yuharee)
-
-- 🐹 팀원 : **김동환**
-[<img src="https://img.shields.io/badge/Github-Link-181717?logo=Github">](https://github.com/antmrhdqn)
-
----
-
 # 1. 프로젝트 개요
 
 ## 프로젝트 소개
