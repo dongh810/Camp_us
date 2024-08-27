@@ -42,7 +42,6 @@
 
 ![스크린샷 2024-08-20 오후 5 43 21](https://github.com/user-attachments/assets/34d92b9d-d408-4587-88dc-602544313fd1)
 
-
 ## 2-3. 시스템 아키텍쳐
 ![image](https://github.com/user-attachments/assets/a1bc41f8-a38a-484c-bd25-d56ba5c99f33)
 
