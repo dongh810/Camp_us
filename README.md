@@ -45,7 +45,6 @@
 ## 2-3. 시스템 아키텍쳐
 ![image](https://github.com/user-attachments/assets/a1bc41f8-a38a-484c-bd25-d56ba5c99f33)
 
-
 ## 2-4. API 명세서
 ![image](https://github.com/user-attachments/assets/29656bfc-81dd-430b-bdac-f6cb875aa8f8)
 
