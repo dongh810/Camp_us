@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.commit.campus.service.CampingServiceSortTests" tests="2" skipped="0" failures="0" errors="0" timestamp="2024-08-14T05:42:27" hostname="baegdonghyeon-ui-MacBookPro.local" time="0.014">
+  <properties/>
+  <testcase name="testGetCampingsSortedByCampId()" classname="com.commit.campus.service.CampingServiceSortTests" time="0.006"/>
+  <testcase name="testGetCampingsSortedByCreatedDate()" classname="com.commit.campus.service.CampingServiceSortTests" time="0.006"/>
+  <system-out><![CDATA[2024-08-14T14:42:27.746+09:00  INFO 76553 --- [Camp_Reserve] [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.commit.campus.service.CampingServiceSortTests]: CampingServiceSortTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-08-14T14:42:27.748+09:00  INFO 76553 --- [Camp_Reserve] [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.commit.campus.CampReserveApplication for test class com.commit.campus.service.CampingServiceSortTests
+2024-08-14T14:42:27.754+09:00  INFO 76553 --- [Camp_Reserve] [    Test worker] c.c.c.service.impl.CampingServiceImpl    : 특정 조건으로 캠핑장 리스트를 조회합니다: 도명=null, 시군구명=null, 글램핑 사이트 수=null, 카라반 사이트 수=null, 페이지=0, 사이즈=10, 정렬=campId, 순서=asc
+2024-08-14T14:42:27.755+09:00  INFO 76553 --- [Camp_Reserve] [    Test worker] c.c.c.service.impl.CampingServiceImpl    : 조회된 캠핑장 수: 3
+2024-08-14T14:42:27.762+09:00  INFO 76553 --- [Camp_Reserve] [    Test worker] c.c.c.service.impl.CampingServiceImpl    : 특정 조건으로 캠핑장 리스트를 조회합니다: 도명=null, 시군구명=null, 글램핑 사이트 수=null, 카라반 사이트 수=null, 페이지=0, 사이즈=10, 정렬=createdDate, 순서=asc
+2024-08-14T14:42:27.762+09:00  INFO 76553 --- [Camp_Reserve] [    Test worker] c.c.c.service.impl.CampingServiceImpl    : 조회된 캠핑장 수: 3
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

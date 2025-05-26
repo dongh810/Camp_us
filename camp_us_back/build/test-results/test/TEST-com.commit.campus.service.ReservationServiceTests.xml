@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.commit.campus.service.ReservationServiceTests" tests="7" skipped="0" failures="0" errors="0" timestamp="2024-08-14T05:42:28" hostname="baegdonghyeon-ui-MacBookPro.local" time="0.431">
+  <properties/>
+  <testcase name="cancelReservation_예약_취소_성공()" classname="com.commit.campus.service.ReservationServiceTests" time="0.411"/>
+  <testcase name="cancelReservation_예약_취소_예외()" classname="com.commit.campus.service.ReservationServiceTests" time="0.002"/>
+  <testcase name="confirmReservation_예약_확정_성공()" classname="com.commit.campus.service.ReservationServiceTests" time="0.005"/>
+  <testcase name="confirmReservation_동시_요청_실패()" classname="com.commit.campus.service.ReservationServiceTests" time="0.002"/>
+  <testcase name="confirmReservation_예약_존재_예외()" classname="com.commit.campus.service.ReservationServiceTests" time="0.002"/>
+  <testcase name="confirmReservation_예약_취소_예외()" classname="com.commit.campus.service.ReservationServiceTests" time="0.002"/>
+  <testcase name="confirmReservation_만료된_예약_예외()" classname="com.commit.campus.service.ReservationServiceTests" time="0.002"/>
+  <system-out><![CDATA[2024-08-14T14:42:28.402+09:00  INFO 76553 --- [Camp_Reserve] [    Test worker] c.c.c.s.impl.ReservationServiceImpl      : findByCampIdAndDateBetween 실행됨
+2024-08-14T14:42:28.402+09:00  INFO 76553 --- [Camp_Reserve] [    Test worker] c.c.c.s.impl.ReservationServiceImpl      : availabilityList = []
+2024-08-14T14:42:28.402+09:00  INFO 76553 --- [Camp_Reserve] [    Test worker] c.c.c.s.impl.ReservationServiceImpl      : while문 동작 중: 0
+2024-08-14T14:42:28.402+09:00  INFO 76553 --- [Camp_Reserve] [    Test worker] c.c.c.s.impl.ReservationServiceImpl      : checkAvailabilityDate 실행됨
+2024-08-14T14:42:28.402+09:00  INFO 76553 --- [Camp_Reserve] [    Test worker] c.c.c.s.impl.ReservationServiceImpl      : currentDateStr = 2024-08-14
+2024-08-14T14:42:28.403+09:00  INFO 76553 --- [Camp_Reserve] [    Test worker] c.c.c.s.impl.ReservationServiceImpl      : avail = null
+2024-08-14T14:42:28.403+09:00  INFO 76553 --- [Camp_Reserve] [    Test worker] c.c.c.s.impl.ReservationServiceImpl      : 일치하는 데이터 없음
+2024-08-14T14:42:28.403+09:00  INFO 76553 --- [Camp_Reserve] [    Test worker] c.c.c.s.impl.ReservationServiceImpl      : createAvailability 실행 완료
+2024-08-14T14:42:28.403+09:00  INFO 76553 --- [Camp_Reserve] [    Test worker] c.c.c.s.impl.ReservationServiceImpl      : newAvailability = Availability(availId=null, campId=1000, date=2024-08-14, generalSiteAvail=10, carSiteAvail=5, glampingSiteAvail=2, caravanSiteAvail=3)
+2024-08-14T14:42:28.407+09:00  INFO 76553 --- [Camp_Reserve] [    Test worker] c.c.c.s.impl.ReservationServiceImpl      : 2024-08-14 날짜로 예약 가능 현황 생성
+2024-08-14T14:42:28.407+09:00  INFO 76553 --- [Camp_Reserve] [    Test worker] c.c.c.s.impl.ReservationServiceImpl      : 카운트 변경됨
+2024-08-14T14:42:28.407+09:00  INFO 76553 --- [Camp_Reserve] [    Test worker] c.c.c.s.impl.ReservationServiceImpl      : availability = Availability(availId=null, campId=1000, date=2024-08-14, generalSiteAvail=10, carSiteAvail=5, glampingSiteAvail=3, caravanSiteAvail=3)
+2024-08-14T14:42:28.407+09:00  INFO 76553 --- [Camp_Reserve] [    Test worker] c.c.c.s.impl.ReservationServiceImpl      : while문 동작 중: 1
+2024-08-14T14:42:28.407+09:00  INFO 76553 --- [Camp_Reserve] [    Test worker] c.c.c.s.impl.ReservationServiceImpl      : checkAvailabilityDate 실행됨
+2024-08-14T14:42:28.407+09:00  INFO 76553 --- [Camp_Reserve] [    Test worker] c.c.c.s.impl.ReservationServiceImpl      : currentDateStr = 2024-08-15
+2024-08-14T14:42:28.407+09:00  INFO 76553 --- [Camp_Reserve] [    Test worker] c.c.c.s.impl.ReservationServiceImpl      : avail = null
+2024-08-14T14:42:28.408+09:00  INFO 76553 --- [Camp_Reserve] [    Test worker] c.c.c.s.impl.ReservationServiceImpl      : 일치하는 데이터 없음
+2024-08-14T14:42:28.408+09:00  INFO 76553 --- [Camp_Reserve] [    Test worker] c.c.c.s.impl.ReservationServiceImpl      : createAvailability 실행 완료
+2024-08-14T14:42:28.408+09:00  INFO 76553 --- [Camp_Reserve] [    Test worker] c.c.c.s.impl.ReservationServiceImpl      : newAvailability = Availability(availId=null, campId=1000, date=2024-08-15, generalSiteAvail=10, carSiteAvail=5, glampingSiteAvail=2, caravanSiteAvail=3)
+2024-08-14T14:42:28.408+09:00  INFO 76553 --- [Camp_Reserve] [    Test worker] c.c.c.s.impl.ReservationServiceImpl      : 2024-08-15 날짜로 예약 가능 현황 생성
+2024-08-14T14:42:28.408+09:00  INFO 76553 --- [Camp_Reserve] [    Test worker] c.c.c.s.impl.ReservationServiceImpl      : 카운트 변경됨
+2024-08-14T14:42:28.408+09:00  INFO 76553 --- [Camp_Reserve] [    Test worker] c.c.c.s.impl.ReservationServiceImpl      : availability = Availability(availId=null, campId=1000, date=2024-08-15, generalSiteAvail=10, carSiteAvail=5, glampingSiteAvail=3, caravanSiteAvail=3)
+2024-08-14T14:42:28.408+09:00  INFO 76553 --- [Camp_Reserve] [    Test worker] c.c.c.s.impl.ReservationServiceImpl      : while문 동작 중: 2
+2024-08-14T14:42:28.408+09:00  INFO 76553 --- [Camp_Reserve] [    Test worker] c.c.c.s.impl.ReservationServiceImpl      : checkAvailabilityDate 실행됨
+2024-08-14T14:42:28.408+09:00  INFO 76553 --- [Camp_Reserve] [    Test worker] c.c.c.s.impl.ReservationServiceImpl      : currentDateStr = 2024-08-16
+2024-08-14T14:42:28.409+09:00  INFO 76553 --- [Camp_Reserve] [    Test worker] c.c.c.s.impl.ReservationServiceImpl      : avail = null
+2024-08-14T14:42:28.409+09:00  INFO 76553 --- [Camp_Reserve] [    Test worker] c.c.c.s.impl.ReservationServiceImpl      : 일치하는 데이터 없음
+2024-08-14T14:42:28.409+09:00  INFO 76553 --- [Camp_Reserve] [    Test worker] c.c.c.s.impl.ReservationServiceImpl      : createAvailability 실행 완료
+2024-08-14T14:42:28.409+09:00  INFO 76553 --- [Camp_Reserve] [    Test worker] c.c.c.s.impl.ReservationServiceImpl      : newAvailability = Availability(availId=null, campId=1000, date=2024-08-16, generalSiteAvail=10, carSiteAvail=5, glampingSiteAvail=2, caravanSiteAvail=3)
+2024-08-14T14:42:28.409+09:00  INFO 76553 --- [Camp_Reserve] [    Test worker] c.c.c.s.impl.ReservationServiceImpl      : 2024-08-16 날짜로 예약 가능 현황 생성
+2024-08-14T14:42:28.409+09:00  INFO 76553 --- [Camp_Reserve] [    Test worker] c.c.c.s.impl.ReservationServiceImpl      : 카운트 변경됨
+2024-08-14T14:42:28.409+09:00  INFO 76553 --- [Camp_Reserve] [    Test worker] c.c.c.s.impl.ReservationServiceImpl      : availability = Availability(availId=null, campId=1000, date=2024-08-16, generalSiteAvail=10, carSiteAvail=5, glampingSiteAvail=3, caravanSiteAvail=3)
+2024-08-14T14:42:28.417+09:00  INFO 76553 --- [Camp_Reserve] [    Test worker] c.c.c.s.impl.ReservationServiceImpl      : findByCampIdAndDateBetween 실행됨
+2024-08-14T14:42:28.418+09:00  INFO 76553 --- [Camp_Reserve] [    Test worker] c.c.c.s.impl.ReservationServiceImpl      : availabilityList = []
+2024-08-14T14:42:28.418+09:00  INFO 76553 --- [Camp_Reserve] [    Test worker] c.c.c.s.impl.ReservationServiceImpl      : while문 동작 중: 0
+2024-08-14T14:42:28.418+09:00  INFO 76553 --- [Camp_Reserve] [    Test worker] c.c.c.s.impl.ReservationServiceImpl      : checkAvailabilityDate 실행됨
+2024-08-14T14:42:28.418+09:00  INFO 76553 --- [Camp_Reserve] [    Test worker] c.c.c.s.impl.ReservationServiceImpl      : currentDateStr = 2024-08-14
+2024-08-14T14:42:28.418+09:00  INFO 76553 --- [Camp_Reserve] [    Test worker] c.c.c.s.impl.ReservationServiceImpl      : avail = null
+2024-08-14T14:42:28.418+09:00  INFO 76553 --- [Camp_Reserve] [    Test worker] c.c.c.s.impl.ReservationServiceImpl      : 일치하는 데이터 없음
+2024-08-14T14:42:28.418+09:00  INFO 76553 --- [Camp_Reserve] [    Test worker] c.c.c.s.impl.ReservationServiceImpl      : createAvailability 실행 완료
+2024-08-14T14:42:28.418+09:00  INFO 76553 --- [Camp_Reserve] [    Test worker] c.c.c.s.impl.ReservationServiceImpl      : newAvailability = Availability(availId=null, campId=1000, date=2024-08-14, generalSiteAvail=10, carSiteAvail=5, glampingSiteAvail=2, caravanSiteAvail=3)
+2024-08-14T14:42:28.418+09:00  INFO 76553 --- [Camp_Reserve] [    Test worker] c.c.c.s.impl.ReservationServiceImpl      : 2024-08-14 날짜로 예약 가능 현황 생성
+2024-08-14T14:42:28.418+09:00  INFO 76553 --- [Camp_Reserve] [    Test worker] c.c.c.s.impl.ReservationServiceImpl      : 카운트 변경됨
+2024-08-14T14:42:28.418+09:00  INFO 76553 --- [Camp_Reserve] [    Test worker] c.c.c.s.impl.ReservationServiceImpl      : availability = Availability(availId=null, campId=1000, date=2024-08-14, generalSiteAvail=10, carSiteAvail=5, glampingSiteAvail=1, caravanSiteAvail=3)
+2024-08-14T14:42:28.419+09:00  INFO 76553 --- [Camp_Reserve] [    Test worker] c.c.c.s.impl.ReservationServiceImpl      : while문 동작 중: 1
+2024-08-14T14:42:28.419+09:00  INFO 76553 --- [Camp_Reserve] [    Test worker] c.c.c.s.impl.ReservationServiceImpl      : checkAvailabilityDate 실행됨
+2024-08-14T14:42:28.419+09:00  INFO 76553 --- [Camp_Reserve] [    Test worker] c.c.c.s.impl.ReservationServiceImpl      : currentDateStr = 2024-08-15
+2024-08-14T14:42:28.419+09:00  INFO 76553 --- [Camp_Reserve] [    Test worker] c.c.c.s.impl.ReservationServiceImpl      : avail = null
+2024-08-14T14:42:28.419+09:00  INFO 76553 --- [Camp_Reserve] [    Test worker] c.c.c.s.impl.ReservationServiceImpl      : 일치하는 데이터 없음
+2024-08-14T14:42:28.419+09:00  INFO 76553 --- [Camp_Reserve] [    Test worker] c.c.c.s.impl.ReservationServiceImpl      : createAvailability 실행 완료
+2024-08-14T14:42:28.419+09:00  INFO 76553 --- [Camp_Reserve] [    Test worker] c.c.c.s.impl.ReservationServiceImpl      : newAvailability = Availability(availId=null, campId=1000, date=2024-08-15, generalSiteAvail=10, carSiteAvail=5, glampingSiteAvail=2, caravanSiteAvail=3)
+2024-08-14T14:42:28.419+09:00  INFO 76553 --- [Camp_Reserve] [    Test worker] c.c.c.s.impl.ReservationServiceImpl      : 2024-08-15 날짜로 예약 가능 현황 생성
+2024-08-14T14:42:28.419+09:00  INFO 76553 --- [Camp_Reserve] [    Test worker] c.c.c.s.impl.ReservationServiceImpl      : 카운트 변경됨
+2024-08-14T14:42:28.419+09:00  INFO 76553 --- [Camp_Reserve] [    Test worker] c.c.c.s.impl.ReservationServiceImpl      : availability = Availability(availId=null, campId=1000, date=2024-08-15, generalSiteAvail=10, carSiteAvail=5, glampingSiteAvail=1, caravanSiteAvail=3)
+2024-08-14T14:42:28.419+09:00  INFO 76553 --- [Camp_Reserve] [    Test worker] c.c.c.s.impl.ReservationServiceImpl      : while문 동작 중: 2
+2024-08-14T14:42:28.419+09:00  INFO 76553 --- [Camp_Reserve] [    Test worker] c.c.c.s.impl.ReservationServiceImpl      : checkAvailabilityDate 실행됨
+2024-08-14T14:42:28.419+09:00  INFO 76553 --- [Camp_Reserve] [    Test worker] c.c.c.s.impl.ReservationServiceImpl      : currentDateStr = 2024-08-16
+2024-08-14T14:42:28.420+09:00  INFO 76553 --- [Camp_Reserve] [    Test worker] c.c.c.s.impl.ReservationServiceImpl      : avail = null
+2024-08-14T14:42:28.420+09:00  INFO 76553 --- [Camp_Reserve] [    Test worker] c.c.c.s.impl.ReservationServiceImpl      : 일치하는 데이터 없음
+2024-08-14T14:42:28.420+09:00  INFO 76553 --- [Camp_Reserve] [    Test worker] c.c.c.s.impl.ReservationServiceImpl      : createAvailability 실행 완료
+2024-08-14T14:42:28.420+09:00  INFO 76553 --- [Camp_Reserve] [    Test worker] c.c.c.s.impl.ReservationServiceImpl      : newAvailability = Availability(availId=null, campId=1000, date=2024-08-16, generalSiteAvail=10, carSiteAvail=5, glampingSiteAvail=2, caravanSiteAvail=3)
+2024-08-14T14:42:28.420+09:00  INFO 76553 --- [Camp_Reserve] [    Test worker] c.c.c.s.impl.ReservationServiceImpl      : 2024-08-16 날짜로 예약 가능 현황 생성
+2024-08-14T14:42:28.420+09:00  INFO 76553 --- [Camp_Reserve] [    Test worker] c.c.c.s.impl.ReservationServiceImpl      : 카운트 변경됨
+2024-08-14T14:42:28.420+09:00  INFO 76553 --- [Camp_Reserve] [    Test worker] c.c.c.s.impl.ReservationServiceImpl      : availability = Availability(availId=null, campId=1000, date=2024-08-16, generalSiteAvail=10, carSiteAvail=5, glampingSiteAvail=1, caravanSiteAvail=3)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

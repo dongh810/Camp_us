@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.commit.campus.service.MyReviewServiceTests" tests="4" skipped="0" failures="0" errors="0" timestamp="2024-08-14T05:42:27" hostname="baegdonghyeon-ui-MacBookPro.local" time="0.208">
+  <properties/>
+  <testcase name="내_리뷰_조회_실패_리뷰없음()" classname="com.commit.campus.service.MyReviewServiceTests" time="0.178"/>
+  <testcase name="리뷰한_캠핑장_조회_성공()" classname="com.commit.campus.service.MyReviewServiceTests" time="0.019"/>
+  <testcase name="리뷰한_캠핑장_조회_실패_리뷰없음()" classname="com.commit.campus.service.MyReviewServiceTests" time="0.003"/>
+  <testcase name="내_리뷰_조회_성공()" classname="com.commit.campus.service.MyReviewServiceTests" time="0.003"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

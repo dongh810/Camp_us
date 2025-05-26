@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.commit.campus.service.ReviewServiceTests" tests="9" skipped="0" failures="0" errors="0" timestamp="2024-08-14T05:42:28" hostname="baegdonghyeon-ui-MacBookPro.local" time="0.153">
+  <properties/>
+  <testcase name="권한_없는_사용자의_리뷰_업데이트_시도()" classname="com.commit.campus.service.ReviewServiceTests" time="0.119"/>
+  <testcase name="페이지_범위_초과_조회()" classname="com.commit.campus.service.ReviewServiceTests" time="0.007"/>
+  <testcase name="캠핑장_리뷰_정상_등록()" classname="com.commit.campus.service.ReviewServiceTests" time="0.007"/>
+  <testcase name="정상적인_리뷰_삭제()" classname="com.commit.campus.service.ReviewServiceTests" time="0.003"/>
+  <testcase name="정상적인_리뷰_조회()" classname="com.commit.campus.service.ReviewServiceTests" time="0.002"/>
+  <testcase name="권한_없는_사용자의_리뷰_삭제_시도()" classname="com.commit.campus.service.ReviewServiceTests" time="0.002"/>
+  <testcase name="정상적인_리뷰_업데이트()" classname="com.commit.campus.service.ReviewServiceTests" time="0.004"/>
+  <testcase name="빈_결과_조회()" classname="com.commit.campus.service.ReviewServiceTests" time="0.002"/>
+  <testcase name="캠핑장_리뷰_이미_존재_예외()" classname="com.commit.campus.service.ReviewServiceTests" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
