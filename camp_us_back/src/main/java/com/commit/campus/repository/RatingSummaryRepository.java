@@ -15,7 +15,7 @@ public class RatingSummaryRepository {
     private final DynamoDbTable<RatingSummary> ratingSummaryTable;
 
     public RatingSummaryRepository(DynamoDbEnhancedClient dynamoDbEnhancedClient) {
-        this.ratingSummaryTable = dynamoDbEnhancedClient.table("RATING_SUMMARY", TableSchema.fromBean(RatingSummary.class));
+        this.ratingSummaryTable = dynamoDbEnhancedClient.table("rating_summary", TableSchema.fromBean(RatingSummary.class));
     }
 
     public void incrementRating(Long campId, int rating) {
