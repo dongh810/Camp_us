@@ -1,6 +1,6 @@
 
 server:
-  port: 8080
+  port: 10000
 
 spring:
   application:
@@ -12,10 +12,9 @@ spring:
 
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://13.209.25.84:3306/camp_us # 24.8.14탄력적 IP 변경
-    hikari:
-      username: comm1t #생성
-      password: comm1t
+    url: jdbc:mysql://localhost:3306/campus
+    username: root
+    password: mysql
 
   # 24.08.08 - cognito 추가
   security:
@@ -54,9 +53,9 @@ spring:
   # 24.7.28 - Redis 추가
   data:
     redis:
-      host: 13.209.25.84 # 24.8.14 탄력적 IP 주소 변경
+      host: localhost # 24.8.14 탄력적 IP 주소 변경
       port: 6379
-      password: comm1t # 24.8.6 ec2에 설치된 redis 연결을 위한 패스워드
+      password: # 24.8.6 ec2에 설치된 redis 연결을 위한 패스워드
       timeout: 7200000 # 24.7.31 - timout 시간 변경(2시간)
 
 token:
