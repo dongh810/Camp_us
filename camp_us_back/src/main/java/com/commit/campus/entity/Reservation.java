@@ -8,7 +8,7 @@ import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.Date;
 
-@Table(name = "reservation")
+@Table(name = "reservation_history")
 @Entity
 @Getter
 @ToString
@@ -41,7 +41,7 @@ public class Reservation implements Serializable {
     @Column(name = "reservation_status")
     private String reservationStatus;  // 예약 상태
 
-    @Column(name = "gear_rental_status")
+    @Column(name = "real_rental_status")
     private String gearRentalStatus;  // 장비 대여 상태
 
     @Column(name = "created_at")
