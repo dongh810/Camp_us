@@ -19,7 +19,7 @@ public class DynamoDBConfig {
         return DynamoDbClient.builder()
                 .region(Region.AP_NORTHEAST_2)
                 .credentialsProvider(ProfileCredentialsProvider.builder()
-                        .profileName("profile_name") // 사용할 프로파일 이름을 지정합니다.
+                        .profileName("default") // 사용할 프로파일 이름을 지정합니다.
                         .build())
 //                .endpointOverride(URI.create("http://localhost:8000")) // AWS DynamoDB 연결 시 제거
                 .build();
