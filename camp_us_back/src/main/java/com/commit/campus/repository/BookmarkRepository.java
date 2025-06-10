@@ -19,7 +19,7 @@ public class BookmarkRepository {
     private final DynamoDbTable<Bookmark> bookmarkDynamoDBTable;
 
     public BookmarkRepository(DynamoDbEnhancedClient dynamoDbEnhancedClient) {
-        this.bookmarkDynamoDBTable = dynamoDbEnhancedClient.table("Bookmark", TableSchema.fromBean(Bookmark.class));
+        this.bookmarkDynamoDBTable = dynamoDbEnhancedClient.table("bookmark", TableSchema.fromBean(Bookmark.class));
     }
 
     public void save(Bookmark bookmark) {
